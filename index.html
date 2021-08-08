@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin-left: 10px;
+            padding: 1px;
+        }
+        h2,h4{
+            color: rgb(24, 78, 78);
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">History of HTTP</h2>
+    <p><span></span> HTTP (HyperText Transfer Protocol) is the underlying protocol of the World Wide Web. Developed by Tim Berners-Lee and his team between 1989-1991, HTTP has seen many changes, keeping most of the simplicity and further shaping its flexibility. HTTP has evolved from an early protocol to exchange files in a semi-trusted laboratory environment, to the modern maze of the Internet, now carrying images, videos in high resolution and 3D.</p>
+    <p><span>*</span>HTTP functions as a request–response protocol in the client–server computing model.</p>
+    <h2 style="text-align: center;">Versions of HTTP</h2>
+    <p>
+        <h4>HTTP/0.9 — The One-line Protocol</h4>
+        <ul>
+            <li>Initial version of HTTP — a simple client-server, request-response, telenet-friendly protocol</li>
+            <li>Request nature: single-line (method + path for requested document)</li>
+            <li>Methods supported: GET only</li>
+            <li>Response type: hypertext only</li>
+            <li>Connection nature: terminated immediately after the response</li>
+            <li>No HTTP headers (cannot transfer other content type files), No status/error codes, No URLs, No versioning</li>
+            <p><span>*</span>Popular web servers (Apache, Nginx) still supports HTTP/0/9. Try opening up a Telnet session and accessing google.com</p>
+
+        </ul>
+        <h4>HTTP/1.0 — Building extensibility</h4>
+        <ul>
+            <li>Browser-friendly protocol</li>
+            <li>Provided header fields including rich metadata about both request and response (HTTP version number, status code, content type)</li>
+            <li>Response: not limited to hypertext (Content-Type header provided ability to transmit files other than plain HTML files — e.g. scripts, stylesheets, media)</li>
+            <li>Methods supported: GET , HEAD , POST</li>
+            <li>Connection nature: terminated immediately after the response</li>
+        </ul>
+        <h4>HTTP/1.1 — The standardized protocol</h4>
+        <ul>
+            <li>This is the HTTP version currently in common use.</li>
+            <li>Introduced critical performance optimizations and feature enhancements — persistent and pipelined connections, chunked transfers, compression/decompression, content negotiations, virtual hosting (a server with a single IP Address hosting multiple domains), faster response and great bandwidth savings by adding cache support.</li>
+            <li>Methods supported: GET , HEAD , POST , PUT , DELETE , TRACE , OPTIONS</li>
+            <li>Connection nature: long-lived</li>
+        </ul>
+        <h4>HTTPS</h4>
+        <ul>
+            <li>Hyper Text Transfer Protocol Secure (HTTPS) is the secure version of HTTP. It uses SSL/TLS for secure encrypted communications.</li>
+            <li>Originally developed by Netscape in mid-1990s, SSL (Secure Socket Layer) is a cryptographic protocol enhancement to HTTP, which defines how client and server should communicate with each other securely. TLS (Transport Layer Security) is the successor of SSL.</li>
+            <li>An HTTPS connection can protect the data transfer from the man-in-the-middle attacks and common security threats by providing bidirectional encryption for communications between a client and server.</li>
+        </ul>
+        <img src="http.PNG" height="600px" width="800px" style="text-align: center;padding-left: 400px;">
+
+    </p>
+
+
+
+
+
+</body>
+</html>
